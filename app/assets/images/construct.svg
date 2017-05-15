@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,7 +45,7 @@
      showgrid="false"
      showguides="false"
      inkscape:zoom="0.97150323"
-     inkscape:cx="-51.601144"
+     inkscape:cx="113.60675"
      inkscape:cy="27.5"
      inkscape:window-x="267"
      inkscape:window-y="188"
@@ -67,18 +67,34 @@
       <g
          id="g4260"
          transform="matrix(0.59937025,0,0,0.59937025,3.5804025,381.61716)">
-        <text
-           sodipodi:linespacing="125%"
-           id="text3336"
-           y="986.01495"
-           x="59.74157"
+        <g
            style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
+           id="text3336">
+          <path
+             d="m 62.06157,957.21495 22.84,0 q 2.48,0 4.2,1.76 1.76,1.72 1.76,4.16 l 0,16.96 q 0,2.44 -1.76,4.2 -1.72,1.72 -4.2,1.72 l -22.84,0 0,-28.8 z m 6.2,6.24 0,16.32 16.32,0 0,-16.32 -16.32,0 z"
              style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
-             y="986.01495"
-             x="59.74157"
-             id="tspan3338"
-             sodipodi:role="line">Direct</tspan></text>
+             id="path4144" />
+          <path
+             d="m 94.79032,986.01495 0,-23.2 6.12,0 0,23.2 -6.12,0 z m 0,-30.8 6.12,0 0,6.16 -6.12,0 0,-6.16 z"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
+             id="path4146" />
+          <path
+             d="m 111.02094,962.81495 12.8,0 0,6.12 -12.52,0 0,17.08 -6.12,0 0,-17.4 q 0,-2.36 1.72,-4.08 1.72,-1.72 4.12,-1.72 z"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
+             id="path4148" />
+          <path
+             d="m 144.34532,962.81495 q 2.4,0 4.08,1.72 1.72,1.72 1.72,4.08 l 0,8.88 -17.4,0 0,2.4 17.4,0 0,6.12 -17.72,0 q -2.36,0 -4.08,-1.72 -1.72,-1.72 -1.72,-4.08 l 0,-11.6 q 0,-2.36 1.72,-4.08 1.72,-1.72 4.08,-1.72 l 11.92,0 z m -11.6,9.32 11.28,0 0,-3.2 -11.28,0 0,3.2 z"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
+             id="path4150" />
+          <path
+             d="m 176.74594,968.93495 -17.36,0 0,10.96 17.4,0 0,6.12 -17.72,0 q -2.36,0 -4.08,-1.72 -1.72,-1.72 -1.72,-4.08 l 0,-11.6 q 0,-2.36 1.72,-4.08 1.72,-1.72 4.08,-1.72 l 17.68,0 0,6.12 z"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
+             id="path4152" />
+          <path
+             d="m 194.78469,968.93495 -8.6,0 0,10.96 8.6,0 0,6.12 -8.88,0 q -2.44,0 -4.16,-1.72 -1.68,-1.72 -1.68,-4.08 l 0,-24.28 6.12,0 0,6.88 8.6,0 0,6.12 z"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Heavy';fill:#f6f2f4;fill-opacity:0;stroke:none;stroke-opacity:1"
+             id="path4154" />
+        </g>
         <g
            transform="translate(28.891285,116.49712)"
            id="g4347"
@@ -94,18 +110,54 @@
              d="m -19.434945,845.94225 c 0,0 -0.587632,1.69818 4.404154,2.20891 0,0 13.4877646,0.49461 15.8504776,2.6776 0,0 2.59606,1.48549 2.566433,6.3212 0,0 -1.063618,10.31571 -0.956932,11.08808 0,0 -0.210352,3.60239 2.379753,3.25636 0,0 1.6465178,0.0619 2.4533168,-4.06415 0,0 3.1704696,-15.13146 1.0117476,-19.27921 0,0 -0.8375106,-2.31184 -5.7538814,-2.84073 0,0 -14.4500256,-1.33976 -19.1400766,-0.76603 3.5e-5,-10e-6 -2.64601,0.27974 -2.814992,1.39797 z"
              id="path3535" />
         </g>
-        <text
-           sodipodi:linespacing="125%"
-           id="text4337"
-           y="986.01495"
-           x="201.69757"
+        <g
            style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
+           id="text4337">
+          <path
+             d="m 204.01757,957.21495 23.6,0 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 l 0,18.4 q 0,2.16 -1.52,3.68 -1.52,1.52 -3.68,1.52 l -23.6,0 0,-28.8 z m 24.48,23.6 0,-18.4 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -18.4,0 q -0.36,0 -0.64,0.28 -0.24,0.24 -0.24,0.6 l 0,18.4 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 18.4,0 q 0.36,0 0.6,-0.24 0.28,-0.28 0.28,-0.64 z"
              style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
-             y="986.01495"
-             x="201.69757"
-             id="tspan4339"
-             sodipodi:role="line">Derivatives</tspan></text>
+             id="path4157" />
+          <path
+             d="m 255.49695,962.81495 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 l 0,8.56 -19.28,0 0,4.24 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 18.4,0 0,4.32 -18.4,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-12.8 q 0,-2.16 1.52,-3.68 1.52,-1.52 3.68,-1.52 l 13.2,0 z m -14.08,9.44 14.96,0 0,-4.24 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -13.2,0 q -0.36,0 -0.64,0.28 -0.24,0.24 -0.24,0.6 l 0,4.24 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4159" />
+          <path
+             d="m 269.21195,962.81495 12.96,0 0,4.32 -12.96,0 q -0.36,0 -0.64,0.28 -0.24,0.24 -0.24,0.6 l 0,18 -4.32,0 0,-5.2 0,-12.8 q 0,-2.16 1.52,-3.68 1.52,-1.52 3.68,-1.52 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4161" />
+          <path
+             d="m 284.55882,986.01495 0,-23.2 4.32,0 0,23.2 -4.32,0 z m 0,-30.8 4.32,0 0,4.32 -4.32,0 0,-4.32 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4163" />
+          <path
+             d="m 316.6382,962.81495 4.96,0 -12.8,23.2 -4.32,0 -12.8,-23.2 5,0 9.96,18.32 10,-18.32 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4165" />
+          <path
+             d="m 342.8807,962.81495 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 l 0,18 -18.4,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-8.56 19.28,0 0,-4.24 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -18.4,0 0,-4.32 18.4,0 z m 0.88,18.88 0,-5.12 -14.96,0 0,4.24 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 14.08,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4167" />
+          <path
+             d="m 366.1732,967.13495 -9.52,0 0,13.68 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 8.64,0 0,4.32 -8.64,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-12.8 0,-12.8 4.32,0 0,7.6 9.52,0 0,4.32 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4169" />
+          <path
+             d="m 368.69945,986.01495 0,-23.2 4.32,0 0,23.2 -4.32,0 z m 0,-30.8 4.32,0 0,4.32 -4.32,0 0,-4.32 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4171" />
+          <path
+             d="m 400.77882,962.81495 4.96,0 -12.8,23.2 -4.32,0 -12.8,-23.2 5,0 9.96,18.32 10,-18.32 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4173" />
+          <path
+             d="m 424.48132,962.81495 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 l 0,8.56 -19.28,0 0,4.24 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 18.4,0 0,4.32 -18.4,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-12.8 q 0,-2.16 1.52,-3.68 1.52,-1.52 3.68,-1.52 l 13.2,0 z m -14.08,9.44 14.96,0 0,-4.24 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -13.2,0 q -0.36,0 -0.64,0.28 -0.24,0.24 -0.24,0.6 l 0,4.24 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4175" />
+          <path
+             d="m 457.21757,968.01495 0,0.88 -4.32,0 0,-0.88 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -13.2,0 q -0.36,0 -0.64,0.28 -0.24,0.24 -0.24,0.6 l 0,3.36 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 13.2,0 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 l 0,3.36 q 0,2.16 -1.52,3.68 -1.52,1.52 -3.68,1.52 l -13.2,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-0.88 4.32,0 0,0.88 q 0,0.36 0.24,0.64 0.28,0.24 0.64,0.24 l 13.2,0 q 0.36,0 0.6,-0.24 0.28,-0.28 0.28,-0.64 l 0,-3.36 q 0,-0.36 -0.28,-0.6 -0.24,-0.28 -0.6,-0.28 l -13.2,0 q -2.16,0 -3.68,-1.52 -1.52,-1.52 -1.52,-3.68 l 0,-3.36 q 0,-2.16 1.52,-3.68 1.52,-1.52 3.68,-1.52 l 13.2,0 q 2.16,0 3.68,1.52 1.52,1.52 1.52,3.68 z"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Orbitron;-inkscape-font-specification:'Orbitron Medium';fill:#ffcc0f;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+             id="path4177" />
+        </g>
       </g>
     </g>
   </g>
