@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/homepage'
   root 'welcome#homepage'
 
-  get 'welcome/portugues', to: 'welcome#portugues'
+  get 'welcome/portuguese', to: 'welcome#portuguese'
   get 'welcome/german', to: 'welcome#german'
   get 'welcome/spanish', to: 'welcome#spanish'
   get 'welcome/italian', to: 'welcome#italian'
