@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'welcome/russian', to: 'welcome#russian'
   get 'welcome/chinese', to: 'welcome#chinese'
   get 'welcome/arabic', to: 'welcome#arabic'
+  get 'welcome/backoffice', to: 'welcome#backoffice'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
