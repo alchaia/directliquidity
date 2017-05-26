@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Direct Derivatives</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <link href="https://backoffice.directfx.com/Content/Common.css" rel="stylesheet" type="text/css" />
+    <link href="https://backoffice.directfx.com/Account/GetTitleBarImage" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://backoffice.directfx.com/Scripts/jquery-1.8.3.min.js"></script>
+    <script src="https://backoffice.directfx.com/Scripts/jquery.validate.min.js"></script>
+    <script src="https://backoffice.directfx.com/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</head>
+
+<body class="login-page login-form-fall">
+<form action="https://backoffice.directfx.com/" method="post">        <div class="login-header login-caret">
+            <div class="login-content">
+                <img class="logo" width="320" src="..assets/construct.svg" alt="Login" />
+            </div>
+        </div>
+		<!-- Maintenance Section -->
+		<div class="login-form" style="display: none;">
+			<div class="login-content">
+
+				<div class="form-group text-left text-med">
+					<p class="text-center" style="font-size:3em; margin-bottom:20px;"><i class="fa fa-cogs"></i></p>
+					<p class="text-center">Our site is currently undergoing routine maintenance. We will be back online shortly.</p>
+				</div>
+
+			</div>
+		</div>
+		<!-- Login Form Section -->
+        <div class="login-form" style="display: block;">
+            <div class="login-content">
+                <!-- Login Form -->
+                <div id="formLogin">
+                    <div role="alert" class="alert alert-danger text-left loginError" id="errorAlert"><div class="validation-summary-errors"><ul><li style="display:none"></li>
+</ul></div></div>
+
+                    <div class="form-group">
+                        <div class="input-group input-prepend">
+                            <div class="input-group-addon add-on"><i class="fa fa-user fa-lg"></i></div>
+                            <input class="input-validation-error form-control span3" data-val="true" data-val-required="The User name field is required." id="username" name="UserName" placeholder="Email" type="text" value="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group input-prepend">
+                            <div class="input-group-addon add-on"><i class="fa fa-key fa-lg"></i></div>
+                            <input class="input-validation-error form-control span3" data-val="true" data-val-required="The Password field is required." id="password" name="Password" placeholder="Password" type="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group text-left fluid-container">
+                        <div class="row">
+                            <a href="#" style="margin-left: 15px;" id="forgotPassword">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin: 0 14px;">
+                        <input class="btn btn-inverse btn-block btn-login" name="Command" type="submit" value=Login />
+                    </div>
+                </div>
+
+                <div id="formReset" style="display: none;">
+                    <div id="divErrorMessage" style="display: none; margin-top: 10px;" class="alert alert-danger text-left loginError"></div>
+                    <div id="resetSuccess" class="alertResetSuccess" style="display: none;"></div>
+                    <div class="form-group">
+                        <div class="input-group input-prepend">
+                            <div class="input-group-addon add-on"><i class="fa fa-envelope fa-lg"></i></div>
+                            <input class="input-validation-error form-control span3" id="txtUserEmail" name="UserName" placeholder="Email Address" type="text" value="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin: 0 14px 20px;">
+                        <input type="submit" class="btn btn-inverse btn-block btn-login" id="btnResetPassword" name="Command" value=Reset Password />
+                    </div>
+
+                    <div class="form-group">
+                        <a id="returnLogin" href="#">Return to Login Page</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</form></body>
+
+<script>
+    /* trigger when page is ready */
+    var login = login || {};
+    $(document).ready(function () {
+        var $liErrorValidate = $('#errorAlert').find('.validation-summary-errors ul li');
+
+        if ($liErrorValidate.length > 0 && $liErrorValidate.first().html() != '') {
+            $('#formLogin').find('.form-group').addClass('has-error');
+            $('#errorAlert').show();
+        }
+
+
+        // Login Form Setup
+        login.$body = $(".login-page");
+        login.$loginContainer = $("#formLogin");
+        login.$resetContainer = $("#formReset");
+
+        setTimeout(function () {
+            login.$body.addClass('login-form-fall-init');
+            setTimeout(function () {
+                login.$loginContainer.find('input:first').focus();
+            }, 550);
+        }, 0);
+
+        // Show Password Reset Form
+
+        function showPasswordReset() {
+            login.$body.removeClass('login-form-fall-init');
+            setTimeout(function () {
+                login.$loginContainer.hide();
+                login.$resetContainer.show();
+                login.$body.addClass('login-form-fall-init');
+                setTimeout(function () {
+                    login.$resetContainer.find('input:first').focus();
+                }, 550);
+            }, 550);
+        };
+
+        // Show Login Form
+
+        function showLogin() {
+            login.$body.removeClass('login-form-fall-init');
+            setTimeout(function () {
+                login.$resetContainer.hide();
+                login.$loginContainer.show();
+                login.$body.addClass('login-form-fall-init');
+                setTimeout(function () {
+                    login.$loginContainer.find('input:first').focus();
+                }, 550);
+            }, 550);
+        };
+
+        $('#forgotPassword').on('click', showPasswordReset);
+        $('#returnLogin').on('click', showLogin);
+
+        $('#btnResetPassword').click(function () {
+            var valid = false;
+            var emailR = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var email = $("#txtUserEmail").val();
+            if (emailR.test(email)) {
+                $.post("/Account/ResetPassword", { "email": email }, function (data) {
+                    if (data.status) {
+                        $('#resetSuccess').text('');
+                        $('#divErrorMessage').hide();
+                        $('#resetSuccess').show();
+                        $('#resetSuccess').text('Password reset Instruction have been emailed.');
+                    } else {
+                        $('#divErrorMessage').text('');
+                        $('#resetSuccess').hide();
+                        $('#divErrorMessage').text(data.message);
+                        $('#divErrorMessage').show();
+                    }
+                });
+            } else {
+                $('#divErrorMessage').text('');
+                $('#resetSuccess').hide();
+                $('#divErrorMessage').text('Invalid email ID.');
+                $('#divErrorMessage').show();
+            }
+            return valid;
+        });
+
+    });
+</script>
+
+
+<!-- Mirrored from backoffice.directfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 May 2017 16:35:57 GMT -->
+</html>
